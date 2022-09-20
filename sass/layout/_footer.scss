@@ -1,12 +1,83 @@
 @use '../abstracts/index' as *;
 
 .subscribe {
-  display: flex;
-  flex-direction: column;
+  @include media-tablet {
+    max-width: 100vw;
+    background: url('../assets/bg-footer-squiggle.svg') center/120% 100%
+      no-repeat;
+
+    > * {
+      @include center-div(480px);
+    }
+  }
 
   &__title {
     background: url('../assets/bg-footer-squiggle.svg') center/120% 100%
       no-repeat;
     padding: 1rem 3.5rem;
+
+    @include media-tablet {
+      //change background image parent
+      background: none;
+      padding: 2rem 0;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    @include media-tablet {
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .input-mail__container {
+      position: relative;
+      padding-bottom: 1.8rem;
+
+      @include media-tablet {
+        padding: 0;
+        flex: 1;
+      }
+
+      //Error message
+      p {
+        position: absolute;
+        font-size: font-size(font-size-xxs);
+        bottom: -7px;
+        left: 0.75rem;
+        color: color(color-error);
+        // display: none;
+
+        @include media-tablet {
+          bottom: -36px;
+        }
+      }
+
+      input[type='email'] {
+        @include input-styling(color-background, color-white, color-primary);
+        width: 100%;
+
+        &:focus {
+          outline: 2px solid color(color-primary);
+        }
+      }
+    }
+
+    button[type='submit'] {
+      @include input-styling(color-primary, color-dark, color-primary);
+      @include btn-hover(color-dark, color-white, color-primary);
+      cursor: pointer;
+
+      @include media-tablet {
+        max-width: 140px;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
   }
 }

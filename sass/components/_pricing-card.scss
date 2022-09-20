@@ -5,6 +5,10 @@
   text-align: left;
   padding: 0 1.5rem 1.5rem;
 
+  @include media-tablet {
+    max-width: 445px;
+  }
+
   &__title {
     margin-top: 1.5rem;
   }

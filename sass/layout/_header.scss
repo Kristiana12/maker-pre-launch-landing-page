@@ -22,8 +22,7 @@
   @include media-mobile {
     background-position: left top;
     background-size: 109%;
-    max-width: 480px;
-    margin: 0 auto;
+    @include center-div(480px);
   }
 }
 

@@ -2,6 +2,19 @@
 
 .benefits__card {
   //Changing img Details width - position
+  @include media-tablet {
+    display: flex;
+    align-items: center;
+    gap: 3.4rem 2.5rem;
+    max-width: 515px;
+
+    &:nth-child(odd) {
+      margin-left: auto;
+    }
+    &:nth-child(even) {
+      margin-right: auto;
+    }
+  }
   &:first-child {
     img {
       margin-right: -0.7rem;
@@ -21,8 +34,8 @@
   }
 
   &--img-container {
-    width: 120px;
     height: 124px;
+    width: 120px;
     margin: 0 auto;
     background-color: color(color-background);
     display: flex;
@@ -30,17 +43,27 @@
     align-items: center;
     border-radius: 45px;
 
+    @include media-tablet {
+      height: 124px;
+      width: 165px;
+    }
+
     img {
       width: 70px;
     }
-
-    @include media-desktop {
-      width: 160px;
-      height: 164px;
-    }
   }
 
-  &--content__title {
-    margin: 2rem auto 0.687rem;
+  &--content {
+    @include media-tablet {
+      text-align: left;
+    }
+
+    &__title {
+      margin: 2rem auto 0.687rem;
+      @include media-tablet {
+        //to center vertically
+        margin: 1rem auto auto;
+      }
+    }
   }
 }

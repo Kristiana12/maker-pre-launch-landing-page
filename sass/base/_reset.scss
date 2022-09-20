@@ -1,7 +1,12 @@
 @use '../abstracts/index' as *;
 
-body {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+body {
   background-color: color(color-dark);
 }
 
@@ -21,6 +26,11 @@ section,
 footer {
   text-align: center;
   padding: 1rem;
+  @include center-div(500px);
+
+  @include media-tablet {
+    min-width: 570px;
+  }
 }
 
 section,
@@ -34,7 +44,6 @@ footer {
 
 main {
   @include media-desktop {
-    max-width: 1100px;
-    margin: 0 auto;
+    @include center-div(1100px);
   }
 }
