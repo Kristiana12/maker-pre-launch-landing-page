@@ -1,0 +1,18 @@
+@use '../abstracts/index' as *;
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 3.4rem;
+}
+
+.pricing__plans--card__benefits--row {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.95rem;
+
+  p {
+    margin: 0.5rem 0;
+  }
+}

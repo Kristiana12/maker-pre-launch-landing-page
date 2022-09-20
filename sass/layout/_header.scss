@@ -1,0 +1,38 @@
+@use '../abstracts/index' as *;
+
+.logo-container {
+  max-width: 1100px;
+  margin: margin(margin-logo-mobile);
+  @include media-tablet {
+    margin: margin(margin-logo-tablet);
+    text-align: left;
+  }
+  @include media-desktop {
+    margin: 3rem auto;
+  }
+}
+
+.background {
+  background: url(../assets/illustration-hero-mobile.png);
+  height: 270px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include media-mobile {
+    background-position: left top;
+    background-size: 109%;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+.heading__content {
+  &--title {
+    margin: margin(margin-main-heading);
+  }
+
+  &--para {
+    margin-bottom: 2rem;
+  }
+}

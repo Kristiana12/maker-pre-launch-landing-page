@@ -1,0 +1,31 @@
+$colors: (
+  'color-primary': #3ee9e5,
+  'color-white': #fff,
+  'color-dark': #080c20,
+  'color-background': #093f68,
+  'color-text': #777f98,
+  'color-error': #ff2965,
+);
+
+$font-sizes: (
+  'font-size-xs': 1rem,
+  'font-size-s': 1.125rem,
+  'font-size-m': 1.5rem,
+  'font-size-l': 2rem,
+  'font-size-xl': 2.5rem,
+  'font-size-xxl': 3rem,
+);
+
+$margins: (
+  'margin-logo-mobile': 2.5rem auto 4.125rem,
+  'margin-logo-tablet': 3rem auto 4.812rem 2.5rem,
+  'margin-logo-desktop': 3.4rem auto 4.812rem,
+  'margin-main-heading': 3rem auto 1.5rem,
+  'margin-section': 9rem,
+);
+
+$break-points: (
+  'break-point-mobile': 360px,
+  'break-point-tablet': 768px,
+  'break-point-desktop': 1200px,
+);

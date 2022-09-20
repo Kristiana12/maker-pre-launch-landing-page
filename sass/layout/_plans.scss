@@ -1,0 +1,19 @@
+@use '../abstracts/index' as *;
+
+.pricing {
+  &__content--para {
+    margin: 1.575rem auto 4.5rem;
+  }
+
+  &__plans {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+
+.pricing__plans--table__title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

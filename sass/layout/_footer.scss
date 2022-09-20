@@ -1,0 +1,12 @@
+@use '../abstracts/index' as *;
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    background: url('../assets/bg-footer-squiggle.svg') center/120% 100%
+      no-repeat;
+    padding: 1rem 3.5rem;
+  }
+}

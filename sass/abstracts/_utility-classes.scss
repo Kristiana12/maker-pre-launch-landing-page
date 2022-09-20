@@ -1,0 +1,12 @@
+@use 'variables' as *;
+@use 'functions' as *;
+
+.color {
+  color: color(color-primary);
+}
+
+.month {
+  font-size: font-size(font-size-s);
+  opacity: 0.6;
+  font-weight: 400;
+}

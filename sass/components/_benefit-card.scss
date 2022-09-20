@@ -1,0 +1,46 @@
+@use '../abstracts/index' as *;
+
+.benefits__card {
+  //Changing img Details width - position
+  &:first-child {
+    img {
+      margin-right: -0.7rem;
+    }
+  }
+
+  &:nth-child(2) {
+    img {
+      width: 60px;
+    }
+  }
+
+  &:nth-child(4) {
+    img {
+      width: 78px;
+    }
+  }
+
+  &--img-container {
+    width: 120px;
+    height: 124px;
+    margin: 0 auto;
+    background-color: color(color-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45px;
+
+    img {
+      width: 70px;
+    }
+
+    @include media-desktop {
+      width: 160px;
+      height: 164px;
+    }
+  }
+
+  &--content__title {
+    margin: 2rem auto 0.687rem;
+  }
+}

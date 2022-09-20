@@ -1,0 +1,19 @@
+@use 'variables' as *;
+@use 'functions' as *;
+
+@mixin media-mobile {
+  @media screen and (min-width: break-point(break-point-mobile)) {
+    @content;
+  }
+}
+@mixin media-tablet {
+  @media screen and (min-width: break-point(break-point-tablet)) {
+    @content;
+  }
+}
+
+@mixin media-desktop {
+  @media screen and (min-width: break-point(break-point-desktop)) {
+    @content;
+  }
+}
