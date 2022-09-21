@@ -28,7 +28,7 @@ function sassTask() {
 function jsTask() {
   return src('./js/**/*.js', { sourcemaps: true })
     .pipe(terser())
-    .pipe(dest('./js', { sourcemaps: '.' }));
+    .pipe(dest('./app', { sourcemaps: '.' }));
 }
 
 // browsersync
@@ -50,7 +50,7 @@ function browserSyncReload(callback) {
 function watchTask() {
   watch('*.html', browserSyncReload);
   watch(
-    ['./sass/**/*.scss', '.js/**/*.js'],
+    ['./sass/**/*.scss', './js/**/*.js'],
     series(sassTask, jsTask, browserSyncReload)
   );
 }

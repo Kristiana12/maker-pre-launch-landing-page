@@ -6,6 +6,8 @@
     background: url('../assets/bg-footer-squiggle.svg') center/120% 100%
       no-repeat;
 
+    padding: 2rem 0;
+
     > * {
       @include center-div(480px);
     }
@@ -17,9 +19,9 @@
     padding: 1rem 3.5rem;
 
     @include media-tablet {
+      padding: 2rem 0;
       //change background image parent
       background: none;
-      padding: 2rem 0;
     }
   }
 
@@ -49,7 +51,7 @@
         bottom: -7px;
         left: 0.75rem;
         color: color(color-error);
-        // display: none;
+        display: none;
 
         @include media-tablet {
           bottom: -36px;

@@ -12,8 +12,20 @@
   }
 }
 
+@mixin media-bigger-tablet {
+  @media screen and (min-width: break-point(break-point-bigger-tablet)) {
+    @content;
+  }
+}
+
 @mixin media-desktop {
   @media screen and (min-width: break-point(break-point-desktop)) {
+    @content;
+  }
+}
+
+@mixin media-monitor {
+  @media screen and (min-width: break-point(break-point-monitor)) {
     @content;
   }
 }

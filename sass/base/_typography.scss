@@ -18,6 +18,10 @@ h2 {
 
 h3 {
   font-size: font-size(font-size-m);
+
+  @include media-desktop {
+    font-size: font-size(font-size-l);
+  }
 }
 
 h4 {
@@ -35,4 +39,10 @@ input,
 ::placeholder {
   font-family: inherit;
   font-size: font-size(font-size-xs);
+}
+
+section,
+footer,
+header {
+  text-align: center;
 }
