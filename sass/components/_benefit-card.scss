@@ -13,12 +13,19 @@
   &:nth-child(2) {
     img {
       width: 60px;
+
+      @include media-desktop {
+        width: 75px;
+      }
     }
   }
 
   &:nth-child(4) {
     img {
       width: 78px;
+      @include media-desktop {
+        width: 96px;
+      }
     }
   }
 
@@ -45,6 +52,10 @@
 
     img {
       width: 70px;
+
+      @include media-desktop {
+        width: 85px;
+      }
     }
   }
 
